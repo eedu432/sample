@@ -1,0 +1,22 @@
+absen = float(input("Masukan Nilai Absensi = "))
+tugas = float(input("Masukan Nilai Tugas   = "))
+uts = float(input("Masukan Nilai UTS     = "))
+uas = float(input("Masukan Nilai UAS     = "))
+
+total = (absen * 0.1) + (tugas * 0.2) + (uts * 0.3) + (uas * 0.4)
+print("Total nilai = ", total)
+
+if 80 <= total <= 100:
+    print("A")
+elif 70 <= total <= 79:
+    print("B+")
+elif 60 <= total <= 69:
+    print("B")
+elif 50 <= total <= 59:
+    print("C+")
+elif 40 <= total <= 49:
+    print("C")
+elif 30 <= total <= 39:
+    print("D")
+else:
+    print("E")
